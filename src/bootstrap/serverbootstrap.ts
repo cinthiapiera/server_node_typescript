@@ -1,5 +1,4 @@
-import http from "http"
-import {IncomingMessage, ServerResponse} from "http"
+import http, {IncomingMessage, ServerResponse} from "http"
 
 export abstract class Bootstrap{
     abstract initialize(): Promise<string | Error>
@@ -9,8 +8,8 @@ export default class extends Bootstrap{
 
     constructor(
         private readonly requestObservable: (
-            req: http.IncomingMessage,
-            res: http.ServerResponse
+            req: IncomingMessage,
+            res: ServerResponse
         ) => void
     ){
         super()

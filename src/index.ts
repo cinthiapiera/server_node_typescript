@@ -3,6 +3,6 @@ interface Teacher {
     age: number
 }
 
-const teacher: Teacher = { name: "Cinthia" , age: 50 }
+const teacher: Teacher = { name: "Cinthia" , age: 32}
 
 console.log(teacher)

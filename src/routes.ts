@@ -26,10 +26,10 @@ const routes: Routes = [
             res.write(
                 JSON.stringify([
                     {
-                        nickname: 'maldonado', active: true
+                        nickname: 'cmaldonado', active: true
                     },
                     {
-                        nickname: 'newusuarionick', active: true
+                        nickname: 'cinthiam', active: true
                     }
                 ])
             )
@@ -45,7 +45,7 @@ export const getRoute = (path: string): Route | undefined =>
 export const notFound = (
     req: http.IncomingMessage,
     res: http.ServerResponse
-): void => {
-    res.writeHead(404,{ 'content-Type': 'Text/plain'})
-    res.end('Route no found')
-}
+    ): void => {
+        res.writeHead(404,{ 'content-Type': 'Text/plain'})
+        res.end('Route not found')
+    }
