@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    //ejecuta como JS y el build a js vainilla
+    "module": "CommonJS",
+    //mantener consistencia de ts a js
+    "esModuleInterop": true,
+    //que el typescript sea reconocido por el node
+    "resolveJsonModule": true,
+    //especifica que el node pueda trabajar con typescript(soporte)
+    "moduleResolution": "node",
+    //version más moderna
+    "target": "ES2020",
+    "noImplicitAny": true,
+    //generae el archivo fuente de JS (build)
+    "sourceMap": true,
+    //decoradores soporte
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    //modo estricto reglas
+    "strict": true,
+    "baseUrl": "./",
+    //carpeta de distribucion
+    "outDir": "./build"
+  },
+  "exclude": ["node_modules"],
+  //lo que se compila
+  "include": ["src/**/*.ts"]
+}
